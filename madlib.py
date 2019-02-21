@@ -3,7 +3,6 @@ def get_words():
     with open('/home/schoentr/Documents/codefellows/401-python/madlib-cli/text.txt', 'r') as rf:
         with open('./output.txt','w') as wf:
             for line in rf:
-                # print(line)
                 start_prompt_index = -1
                 line_start_index = 0
                 new_line = ''
@@ -26,8 +25,6 @@ def get_words():
                                 new_line+='\n'
                     if char_index == len(line) - 1 and start_prompt_index == -1:
                         new_line = line
-                        print(new_line)     
-                print(new_line)
                 wf.write(new_line)
                 
 

@@ -1,3 +1,5 @@
+""" madlib module that reads text.txt and outputs to output.txt"""
+
 def get_words():
     """Reads all the text file and creates promps for user input"""
     with open('/home/schoentr/Documents/codefellows/401-python/madlib-cli/text.txt', 'r') as rf:
@@ -9,7 +11,7 @@ def get_words():
                 for char_index in range(0,len(line)):
                     if line[char_index] == '{':
                         if char_index - line_start_index == 0:
-                            new_line+= ''
+                            new_line+= ' '
                         start_prompt_index = char_index+1
                     if line[char_index] == '}':
                         end_prompt_index = char_index
@@ -17,7 +19,7 @@ def get_words():
                             new_line+=line[line_start_index:start_prompt_index-1]
                             temp_word = ''
                             temp_word = line[start_prompt_index: end_prompt_index]
-                            prompt = 'Enter a  ' + temp_word + ' :'
+                            prompt = 'Enter a ' + temp_word + ' :'
                             new_word = input(prompt)
                             new_line += new_word
                             line_start_index = end_prompt_index + 1

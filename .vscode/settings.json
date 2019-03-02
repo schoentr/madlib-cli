@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/home/schoentr/.local/share/virtualenvs/madlib-cli-vAa5Da5C/bin/python",
+    "python.pythonPath": "/usr/local/opt/python/bin/python3.7",
     "python.linting.pylintEnabled": false,
     "python.linting.pep8Enabled": true,
     "python.linting.enabled": true

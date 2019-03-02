@@ -2,7 +2,7 @@
 
 def get_words():
     """Reads all the text file and creates promps for user input"""
-    with open('/home/schoentr/Documents/codefellows/401-python/madlib-cli/text.txt', 'r') as rf:
+    with open('./text.txt', 'r') as rf:
         with open('./output.txt','w') as wf:
             for line in rf:
                 start_prompt_index = -1
